@@ -130,7 +130,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: if($enable-dark-theme, #79b8ff, $grey-color);
+  color: if($enable-dark-skin, #79b8ff, $grey-color);
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
@@ -150,9 +150,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid if($enable-dark-theme, #032f62, #e8e8e8);
+  border: 1px solid if($enable-dark-skin, #032f62, #e8e8e8);
   border-radius: 3px;
-  background-color: if($enable-dark-theme, #032f62, #eef);
+  background-color: if($enable-dark-skin, #032f62, #eef);
 }
 
 code {
@@ -234,23 +234,23 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: if($enable-dark-theme, $dark-theme-light-text, lighten($text-color, 18%));
+  color: if($enable-dark-skin, $dark-skin-light-text, lighten($text-color, 18%));
   border-collapse: collapse;
-  border: 1px solid if($enable-dark-theme, $dark-theme-code-background, $grey-color-light);
+  border: 1px solid if($enable-dark-skin, $dark-skin-code-background, $grey-color-light);
   tr {
     &:nth-child(even) {
-      background-color: if($enable-dark-theme, $dark-theme-code-background, lighten($grey-color-light, 6%));
+      background-color: if($enable-dark-skin, $dark-skin-code-background, lighten($grey-color-light, 6%));
     }
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: if($enable-dark-theme, $dark-theme-code-background, lighten($grey-color-light, 3%));
-    border: 1px solid if($enable-dark-theme, $dark-theme-code-background, darken($grey-color-light, 4%));
-    border-bottom-color: if($enable-dark-theme, $dark-theme-code-background, darken($grey-color-light, 12%));
+    background-color: if($enable-dark-skin, $dark-skin-code-background, lighten($grey-color-light, 3%));
+    border: 1px solid if($enable-dark-skin, $dark-skin-code-background, darken($grey-color-light, 4%));
+    border-bottom-color: if($enable-dark-skin, $dark-skin-code-background, darken($grey-color-light, 12%));
   }
   td {
-    border: 1px solid if($enable-dark-theme, $dark-theme-code-background, $grey-color-light);
+    border: 1px solid if($enable-dark-skin, $dark-skin-code-background, $grey-color-light);
   }
 }

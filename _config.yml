@@ -12,7 +12,8 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
-  enable_dark_theme: false
+  # Change to "dark" to use dark minima skin
+  skin: light
 
   # generate social links in footer
   social_links:

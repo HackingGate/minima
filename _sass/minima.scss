@@ -20,13 +20,13 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $orange-color:     #f66a0a !default;
 $table-text-align: left !default;
 
-$dark-theme-background: #1b1f23;
-$dark-theme-light-text: #c8e1ff;
-$dark-theme-dark-text: #1b1f23;
-$dark-theme-code-background: #032f62;
-@if ($enable-dark-theme) {
-  $text-color: $dark-theme-light-text;
-  $background-color: $dark-theme-background;
+$dark-skin-background: #1b1f23;
+$dark-skin-light-text: #c8e1ff;
+$dark-skin-dark-text: #1b1f23;
+$dark-skin-code-background: #032f62;
+@if ($enable-dark-skin) {
+  $text-color: $dark-skin-light-text;
+  $background-color: $dark-skin-background;
 }
 
 // Width of the content area

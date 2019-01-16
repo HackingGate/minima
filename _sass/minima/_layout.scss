@@ -10,7 +10,7 @@
   // Positioning context for the mobile navigation icon
   position: relative;
 
-  @if ($enable-dark-theme) {
+  @if ($enable-dark-skin) {
     background-color: #24292e;
     border-bottom: unset;
   }
@@ -29,7 +29,7 @@
 
   &,
   &:visited {
-    color: if($enable-dark-theme, $dark-theme-light-text, $grey-color-dark);
+    color: if($enable-dark-skin, $dark-skin-light-text, $grey-color-dark);
   }
 }
 
@@ -129,18 +129,18 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  @if ($enable-dark-theme) {
-    background-color: $dark-theme-light-text;
+  @if ($enable-dark-skin) {
+    background-color: $dark-skin-light-text;
     border-top:unset;
     a {
-      color: $dark-theme-dark-text;
+      color: $dark-skin-dark-text;
     }
   }
 }
 
 .site-footer * {
-  @if ($enable-dark-theme) {
-    color: $dark-theme-dark-text
+  @if ($enable-dark-skin) {
+    color: $dark-skin-dark-text
   }
 }
 
@@ -232,7 +232,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: if($enable-dark-theme, #79b8ff, $grey-color);
+  color: if($enable-dark-skin, #79b8ff, $grey-color);
 }
 
 .post-link {
@@ -300,7 +300,7 @@
     a {
       display: block;
       padding: $spacing-unit / 4;
-      border: if($enable-dark-theme, unset, 1px solid $grey-color-light);
+      border: if($enable-dark-skin, unset, 1px solid $grey-color-light);
     }
     &:hover .svg-icon { fill: currentColor; }
   }

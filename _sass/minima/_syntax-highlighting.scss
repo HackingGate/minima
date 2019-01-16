@@ -2,11 +2,11 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: if($enable-dark-theme, $dark-theme-code-background, #fff);
+  background: if($enable-dark-skin, $dark-skin-code-background, #fff);
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: if($enable-dark-theme, $dark-theme-code-background, #fff);;
+    background: if($enable-dark-skin, $dark-skin-code-background, #fff);;
   }
 
   .c     { color: #998; font-style: italic } // Comment
