@@ -210,6 +210,7 @@ minima:
   social_links:
     twitter: jekyllrb
     github: jekyll
+    gitlab: jekyll
     dribbble: jekyll
     facebook: jekyll
     flickr: jekyll
