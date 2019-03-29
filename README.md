@@ -210,7 +210,6 @@ minima:
   social_links:
     twitter: jekyllrb
     github: jekyll
-    gitlab: jekyll
     dribbble: jekyll
     facebook: jekyll
     flickr: jekyll
@@ -223,6 +222,12 @@ minima:
     rss: rss
 
     mastodon:
+     - username: jekyll
+       instance: example.com
+     - username: jekyll2
+       instance: example.com
+
+    gitlab:
      - username: jekyll
        instance: example.com
      - username: jekyll2
