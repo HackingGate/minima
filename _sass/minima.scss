@@ -28,6 +28,12 @@ $dark-skin-code-background: #032f62;
   $text-color: $dark-skin-light-text;
   $background-color: $dark-skin-background;
 }
+@media (prefers-color-scheme: dark) {
+  @if ($mojave-dark-mode) {
+    $text-color: $dark-skin-light-text;
+    $background-color: $dark-skin-background;
+  }
+}
 
 // Width of the content area
 $content-width:    800px !default;

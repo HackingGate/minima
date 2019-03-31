@@ -3,4 +3,5 @@
 ---
 
 $enable-dark-skin: {{ site.minima.skin }} == 'dark';
+$mojave-dark-mode: {{ site.minima.mojave-dark-mode }} == 'enable';
 @import "minima";

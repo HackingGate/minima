@@ -14,6 +14,8 @@ minima:
   date_format: "%b %-d, %Y"
   # Change to "dark" to use dark minima skin
   skin: light
+  # Change to "enable" to use Mojave dark mode
+  mojave-dark-mode: enable
 
   # generate social links in footer
   social_links:
@@ -39,6 +41,9 @@ minima:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
+    gitlab:
+      - username: jekyll
+        instance: gitlab.com
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
