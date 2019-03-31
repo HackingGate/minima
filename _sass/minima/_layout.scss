@@ -129,7 +129,7 @@
   }
   @media (prefers-color-scheme: dark) {
     .page-link {
-      color: $dark-skin-light-text;
+      color: if($mojave-dark-mode, $dark-skin-light-text, $text-color);
       line-height: $base-line-height;
       display: block;
       padding: 5px 10px;

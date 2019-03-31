@@ -15,7 +15,7 @@ minima:
   # Change to "dark" to use dark minima skin
   skin: light
   # Change to "enable" to use Mojave dark mode
-  mojave-dark-mode: enable
+  mojave-dark-mode: disable
 
   # generate social links in footer
   social_links:

@@ -31,8 +31,8 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $dark-skin-light-text;
-    background-color: $dark-skin-background;
+    color: if($mojave-dark-mode, $dark-skin-light-text, $text-color);
+    background-color: if($mojave-dark-mode, $dark-skin-background, $background-color);
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
        -moz-font-feature-settings: "kern" 1;
@@ -149,7 +149,7 @@ a {
     }
   
     &:hover {
-      color: $dark-skin-light-text;
+      color: if ($mojave-dark-mode, $dark-skin-light-text, $text-color);
       text-decoration: underline;
     }
   
