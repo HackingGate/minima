@@ -20,6 +20,21 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $orange-color:     #f66a0a !default;
 $table-text-align: left !default;
 
+$dark-skin-background: #1b1f23;
+$dark-skin-light-text: #c8e1ff;
+$dark-skin-dark-text: #1b1f23;
+$dark-skin-code-background: #032f62;
+@if ($enable-dark-skin) {
+  $text-color: $dark-skin-light-text;
+  $background-color: $dark-skin-background;
+}
+@media (prefers-color-scheme: dark) {
+  @if ($mojave-dark-mode) {
+    $text-color: if($mojave-dark-mode, $dark-skin-light-text, $text-color);
+    $background-color: if($mojave-dark-mode, $dark-skin-background, $background-color);
+  }
+}
+
 // Width of the content area
 $content-width:    800px !default;
 

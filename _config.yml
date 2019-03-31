@@ -12,6 +12,8 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+  # skin: dark
+  # mojave-dark-mode: enable
 
   # generate social links in footer
   social_links:
@@ -37,6 +39,9 @@ minima:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
+    gitlab:
+      - username: jekyll
+        instance: gitlab.com
 
     # GitLab instances
     # gitlab:

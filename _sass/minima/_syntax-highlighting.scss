@@ -2,11 +2,19 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
+  background: if($enable-dark-skin, $dark-skin-code-background, #fff);
+  @media (prefers-color-scheme: dark) {
+    background: if($mojave-dark-mode, $dark-skin-code-background, #fff);
+  }
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #eef;
+    background: if($enable-dark-skin, $dark-skin-code-background, #fff);;
+  }
+  @media (prefers-color-scheme: dark) {
+    .highlighter-rouge & {
+      background: if($mojave-dark-mode, $dark-skin-code-background, #fff);;
+    }
   }
 
   .c     { color: #998; font-style: italic } // Comment
