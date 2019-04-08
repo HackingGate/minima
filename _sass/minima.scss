@@ -23,7 +23,7 @@ $table-text-align: left !default;
 $dark-skin-background: #1b1f23;
 $dark-skin-light-text: #c8e1ff;
 $dark-skin-dark-text: #1b1f23;
-$dark-skin-code-background: #032f62;
+$dark-skin-code-background: #00003d;
 @if ($enable-dark-skin) {
   $text-color: $dark-skin-light-text;
   $background-color: $dark-skin-background;
