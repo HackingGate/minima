@@ -51,8 +51,14 @@
   .ni    { color: #800080 } // Name.Entity
   .ne    { color: #900; font-weight: bold } // Name.Exception
   .nf    { color: #900; font-weight: bold } // Name.Function
+  @media (prefers-color-scheme: dark) {
+    .nf    { color: lighten(#900, 10%)} // Name.Tag
+  }
   .nn    { color: #555 } // Name.Namespace
   .nt    { color: #000080 } // Name.Tag
+  @media (prefers-color-scheme: dark) {
+    .nt    { color: lighten(#000080, 20%)} // Name.Tag
+  }
   .nv    { color: #008080 } // Name.Variable
   .ow    { font-weight: bold } // Operator.Word
   .w     { color: #bbb } // Text.Whitespace
